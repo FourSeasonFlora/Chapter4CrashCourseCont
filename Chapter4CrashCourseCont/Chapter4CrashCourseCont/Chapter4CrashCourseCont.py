@@ -63,10 +63,14 @@ print ()
 
 #4-10
 flowers = ['marigolds', 'nastirtum', 'calendula', 'sunflower', 'coreiopsis', 'rudabeckia']
-print ("My favorite flowers are ")
+print (flowers[0:3])
+print ()
+
 for flower in flowers [:]:
     print(flower.title())
-print ("My favorite flowers are ")
+
+print ("\nMy favorite flowers are ")
+
 for flower in flowers [4:6]:
     print(flower.title())
 print ()
@@ -76,3 +80,54 @@ pottedplants = flowers[:]
 print (pottedplants)
 pottedplants.append('bee balm')
 print (pottedplants)
+print ()
+
+
+#4-10b
+beer_types =['berliner weisse', 'kolsch', 'marzen', 'lager', 'maibock', 'helles', 'pilsner', 'dunkel', 'gose']
+beer_message = 'The next beer styles in the list are:'
+print (beer_message)
+print (beer_types [0:3])
+print ()
+print (beer_message)
+print (beer_types [3:6])
+print ()
+print (beer_message)
+print (beer_types [6:])
+print ()
+
+#4-11/12
+favorite_pizza = ['margherita', 'greek', 'pepperoni']
+pizza_message = 'I am very hungry and pizza sounds great. I am looking forward to completing this chapter!'
+for favorite_pizzas in favorite_pizza:
+    print (favorite_pizzas)
+print ()
+print (pizza_message)
+print ()
+
+best_pizza = favorite_pizza [:]
+print (best_pizza)
+print ()
+
+favorite_pizza.append ('veggie')
+for favorites in favorite_pizza [3:]:
+    print (f'Another type of pizza I like is {favorites.title()} Pizza')
+print ()
+
+best_pizza.append ('pineapple & pepper')
+print ('I think the best pizzas are:')
+for best in best_pizza:
+    print (best.title())
+print ()
+
+#4-13
+summer_activities = ('hiking', 'kayaking', 'biking', 'swimming', 'gardening')
+print ('A few summer activies are:')
+for activities in summer_activities:
+    print (activities.title())
+for summer in summer_activities [1:2]:
+    print (f'\nMy favorite thing to do in the summer is {summer}!\n')
+
+summer_activities = ('swimming', 'gardening')
+for favorite_things in summer_activities:
+    print (f'\n{favorite_things.title()} is something I can do close to home!\n')
